@@ -312,7 +312,7 @@ fun compileLogical (s1, s2, env, code, op) {
                       <+ Binop("cmp", L(0), s2)
                       <+ Set(suffix("!="), "%dl")
                       <+ Binop(op, eax, edx)
-                      <+ Mov(eax, s2)]
+                      <+ Mov(edx, s2)]
 }
 
 fun opType (op) {
